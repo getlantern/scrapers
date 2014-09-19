@@ -16,6 +16,6 @@ for i in range(0,21):
     dom = lxml.html.fromstring(html)
     
     for link in dom.cssselect('.site-listing .desc-paragraph a'):
-        print '"%s,"' % link.text_content()
+        print '"%s",' % link.text_content()
 
 print "]"   
